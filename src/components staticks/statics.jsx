@@ -1,8 +1,10 @@
-import style from "./statistics.module.css";
-
+import style from "./statics.module.css";
+import trading from "../assets/trading.svg";
+import skorost from "../assets/skorost.svg";
+import ruchka from "../assets/ruchka.svg";
 export default function Statistics() {
   return (
-    <section className={`${style.statistics} container`}>
+    <section className={`container ${style.statistics}`}>
       <div className={style.statsIntro}>
         <h2>Advanced Statistics</h2>
         <p>
@@ -14,7 +16,7 @@ export default function Statistics() {
       <div className={style.statsCards}>
         <div className={style.card}>
           <div className={style.icon}>
-            <img src="./images/trading.svg" alt="Trading" />
+            <img src={trading} alt="Trading" />
           </div>
           <h3>Brand Recognition</h3>
           <p>
@@ -25,7 +27,7 @@ export default function Statistics() {
 
         <div className={style.card}>
           <div className={style.icon}>
-            <img src="./images/skorost-tomchi.svg" alt="Speed" />
+            <img src={skorost} alt="Speed" />
           </div>
           <h3>Detailed Records</h3>
           <p>
@@ -36,7 +38,7 @@ export default function Statistics() {
 
         <div className={style.card}>
           <div className={style.icon}>
-            <img src="./images/ruchka-pencil.svg" alt="Customizable" />
+            <img src={ruchka} alt="Customizable" />
           </div>
           <h3>Fully Customizable</h3>
           <p>

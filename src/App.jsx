@@ -1,14 +1,10 @@
-import { useState } from "react";
-import "./App.css";
-import Header from "./components//Header/index.jsx";
-import Hero from "./components//Header/hero.jsx";
-import Statistics from "./components//Header/statics.jsx";
-import Boost from "./components//Header/boost.jsx";
-import Footer from "./components/Header/footer.jsx";
+import Header from "./components/Header/index";
+import Hero from "./hero";
+import Statistics from "./components staticks/statics";
+import Boost from "./components-boost/boost";
+import Footer from "./components-footer/footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Header />

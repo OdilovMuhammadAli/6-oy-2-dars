@@ -1,11 +1,12 @@
 import style from "./header.module.css";
+import logo from "../../assets/shortly-black.svg";
 
 export default function Header() {
   return (
     <header className={style.headerContainer}>
       <div className={`${style.container} ${style.header}`}>
         <a href="#">
-          <img src="./images/logo-shortly.svg" alt="Shortly logo" />
+          <img src={logo} alt="Shortly logo" />
         </a>
 
         <nav className={style.navbar}>

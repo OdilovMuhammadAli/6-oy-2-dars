@@ -1,11 +1,16 @@
 import style from "./footer.module.css";
+import shortly from "../assets/shortly.svg";
+import facebook from "../assets/facebook.svg";
+import twitter from "../assets/twitter.svg";
+import pinterest from "../assets/penterest.svg";
+import instagram from "../assets/instagram.svg";
 
 export default function Footer() {
   return (
     <footer className={style.footerWrap}>
       <div className={`container ${style.footer}`}>
         <div className={style.footerLogo}>
-          <img src="./images/white-shortly.svg" alt="Shortly" />
+          <img src={shortly} alt="Shortly" />
         </div>
 
         <div className={style.footerLinks}>
@@ -58,16 +63,16 @@ export default function Footer() {
 
         <div className={style.footerSocials}>
           <a href="#">
-            <img src="./images/facebook.svg" alt="Facebook" />
+            <img src={facebook} alt="Facebook" />
           </a>
           <a href="#">
-            <img src="./images/twitter.svg" alt="Twitter" />
+            <img src={twitter} alt="Twitter" />
           </a>
           <a href="#">
-            <img src="./images/Pinterest.svg" alt="Pinterest" />
+            <img src={pinterest} alt="Pinterest" />
           </a>
           <a href="#">
-            <img src="./images/instagram.svg" alt="Instagram" />
+            <img src={instagram} alt="Instagram" />
           </a>
         </div>
       </div>

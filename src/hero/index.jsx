@@ -1,5 +1,5 @@
 import olma from "./hero.module.css";
-
+import worker from "../assets/worker.svg";
 export default function Hero() {
   return (
     <section className={`${olma.hero} ${olma.container}`}>
@@ -15,10 +15,7 @@ export default function Hero() {
       </div>
 
       <div className={olma.heroImage}>
-        <img
-          src="./images/illustration-working.svg"
-          alt="Working illustration"
-        />
+        <img src={worker} alt="Working illustration" />
       </div>
     </section>
   );
